@@ -39,6 +39,7 @@ public class LogicTest {
         ImpossibleMoveException exception = assertThrows(ImpossibleMoveException.class, () -> {
             bishopBlack.way(Cell.G3);
         });
-        assertThat(exception.getMessage()).isEqualTo("Could not way by diagonal from %s to %s", Cell.G1, Cell.G3);
+        assertThat(exception.getMessage()).isEqualTo(
+                "Could not way by diagonal from %s to %s", Cell.G1, Cell.G3);
     }
 }

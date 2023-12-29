@@ -26,7 +26,7 @@ class BishopBlackTest {
     void whenWayFigure() {
         BishopBlack bishopBlack = new BishopBlack(Cell.C1);
         Cell[] expected = bishopBlack.way(Cell.G5);
-        assertThat(expected).isEqualTo(new Cell[] {
+        assertThat(expected).isEqualTo(new Cell[]{
                 Cell.D2,
                 Cell.E3,
                 Cell.F4,
